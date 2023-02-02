@@ -31,17 +31,25 @@ class Circle implements Shape{
 }
 
 public class lambda {
+    List<String> cars;
+    lambda(){
+        cars = new ArrayList<>();
+        cars.add("MG");
+        cars.add("WagonR");
+        cars.add("Baleno");
+    }
 
-    List<String> cars = new ArrayList<>();
-    public  void createCars(){
-        this.cars.add("MG");
-        this.cars.add("WagonR");
-        this.cars.add("Baleno");
+    public static void createCars(List<String> car, String newCarName){
+        car.add(newCarName);
+    }
+    public void display(List<String> car){
+        System.out.println(car);
     }
 
     public static void main(String [] args){
-        String str = "hello";
-
+        lambda c = new lambda();
+        createCars(c.cars, "hyundai");
+        c.display(c.cars);
         // For single lambda expression
         Shape rectangle =  () -> System.out.println("Print rectangle");
         rectangle.draw();
