@@ -40,6 +40,7 @@ class Shrey{
 }
 public class lambda {
     List<String> cars;
+    List<String> newcars;
     lambda(){
         cars = new ArrayList<>();
         cars.add("MG");
