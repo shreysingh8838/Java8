@@ -71,7 +71,7 @@ public class lambda {
         // How to pass lambda expression as method parameter (II)
         print(rectangle);
         print(square);
-        System.out.println("testing can we again make a commit after a merge in a PR");
+        System.out.println("testing can we make a commit after a merge in a PR");
     }
 
     // How to pass lambda expression as method parameter (I)
