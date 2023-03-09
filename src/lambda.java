@@ -64,7 +64,7 @@ public class lambda {
 
         // For multiple lambda expression
         Shape square = () -> {
-            System.out.println("Print Square");
+            System.out.println("Print Square 2");
         };
         square.draw();
 
